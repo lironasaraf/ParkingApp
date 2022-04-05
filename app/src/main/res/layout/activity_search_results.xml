@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_8484"
+    tools:context=".SearchResults">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="275dp"
+        android:layout_height="491dp"
+        android:layout_margin="16dp"
+        android:background="@color/black"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_background"
+                android:orientation="horizontal"
+
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/locationCity"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/Photo"
+                    app:layout_constraintTop_toBottomOf="@+id/Photo" />
+
+                <TextView
+                    android:id="@+id/locationStreet"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/locationCity" />
+
+                <TextView
+                    android:id="@+id/locationHouseNum"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="290dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/locationStreet" />
+
+                <TextView
+                    android:id="@+id/From"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="330dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/locationHouseNum" />
+
+                <TextView
+                    android:id="@+id/To"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="370dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/From" />
+
+                <TextView
+                    android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="410dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/To" />
+
+                <TextView
+                    android:id="@+id/phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450dp"
+                    android:background="@drawable/textview"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TextView"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Price" />
+
+                <ImageView
+                    android:id="@+id/Photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_start_color"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/Prev"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <Button
+        android:id="@+id/Prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_start_color"
+        android:text="previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <Button
+        android:id="@+id/reportspam"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:text="spam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/Prev"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        app:layout_constraintVertical_bias="0.964" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
